@@ -1,0 +1,141 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "kategoriYazanId": 1,
+      "kategoriAdi": "Son Dakika",
+      "kategoriKayitTarihi": "1669997320420",
+      "kategoriDuzenlemeTarihi": "1670015820559"
+    },
+    {
+      "id": 2,
+      "kategoriAdi": "Haber",
+      "kategoriKayitTarihi": "1670016584973",
+      "kategoriDuzenlemeTarihi": "1670016584973"
+    },
+    {
+      "id": 3,
+      "kategoriAdi": "Spor",
+      "kategoriKayitTarihi": "1670016593397",
+      "kategoriDuzenlemeTarihi": "1670194145185"
+    },
+    {
+      "id": 4,
+      "kategoriYazanId": null,
+      "kategoriAdi": "Gündem",
+      "kategoriKayitTarihi": "1670250643089",
+      "kategoriDuzenlemeTarihi": "1670326202255"
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "adiSoyadi": "Ahmet Cankurt",
+      "gmail": "ahmet",
+      "parola": "123",
+      "telefon": "0532 123 45 67",
+      "admin": "1",
+      "uyeKayitTarihi": "1669494689375",
+      "uyeDuzenlemeTarihi": "1669990413584"
+    },
+    {
+      "id": 2,
+      "adiSoyadi": "Sinan",
+      "gmail": "sinan",
+      "parola": "123",
+      "telefon": "05323331347",
+      "admin": "1",
+      "uyeKayitTarihi": "1670016686116",
+      "uyeDuzenlemeTarihi": "1670016686116"
+    },
+    {
+      "id": 3,
+      "adiSoyadi": "hasan",
+      "gmail": "hasan",
+      "parola": "123",
+      "telefon": "05458413690",
+      "admin": "0",
+      "uyeKayitTarihi": "1670016702952",
+      "uyeDuzenlemeTarihi": "1670194170435"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "haberYazan": "Ahmet Cankurt",
+      "haberBasligi": "Allahyar: F.Bahçe'de konuşmak istemeyeceğim sebeplerden doaaslayı oynayamadım",
+      "categoryId": "1",
+      "haberManseti": "Hull City'nin İranlı futbolcusu Allahyar Seyyadmanesh, \"Türkiye'ye geldiğimde ben de daha fazla oynamak istiyordum. Daha fazla oynayabileceğimi de düşünüyorum. Burada anlatmak istemeyeceğim, konuşmak istemeyeceğim sebeplerden dolayı forma şansı bulamadım\" dedi.",
+      "haberYazisi": "\"ZORYA'DAKİ PERFORMANSIMIN ARDINDAN BİRÇOK TEKLİF GELDİ\"\n\nUkrayna ekibi Zorya'da gösterdiği performansın ardından birçok teklif aldığını belirten Allahyar, \"Zorya'da iyi bir performans sergiledim. Bunun üzerine farklı ülkelerden birçok teklif geldi. Hull City de bunlardan bir tanesiydi. Önce kulüp başkanımızla konuşuldu. Güzel bir görüşme oldu. Sonrasında transferim gerçekleşti. Ben zaten İngiliz futbolunu seviyorum. Burada çok mutluyum. Benim için Hull City Kulübü'ne transfer olmam iyi oldu\" diye konuştu.\n\n\"PERFORMANSIMIZI YÜKSELTEBİLİRSEK TEKRAR HEDEFLEDİĞİMİZ YERLERE GELEBİLİRİZ\"\n\nDünya Kupası arasının kendileri için iyi olduğunu vurgulayan 21 yaşındaki forvet oyuncusu, \"İngiltere Championship güzel ve zor bir lig. Ben de zor olmasını ve sıkı çalışmayı seviyorum. Lige bu sene iyi başladık. Ancak 5 maçın ardından problemler yaşamaya başladık. Performans grafiğimiz aşağı doğru gitti. Liglere Dünya Kupası nedeniyle ara verildi. Bu ara bizim için iyi oldu. Yeni bir hocamız var. Yeni bir mantalite getirdi. Bu arada iyi çalışıp, lige iyi başlamak istiyoruz. Hala 25 maçımız var. Dolayısıyla performansımızı yükseltebilirsek tekrar hedeflediğimiz yerlere gelebiliriz\" şeklinde konuştu.\n\n\"FENERBAHÇE'DE KONUŞMAK İSTEMEYECEĞİM SEBEPLERDEN DOLAYI FORMA ŞANSI BULAMADIM\"\n\nFenerbahçe'de farklı sebeplerden dolayı yeterli forma şansı bulamadığını söyleyen Allahyar, \"Türkiye'ye geldiğimde ben de daha fazla oynamak istiyordum. Daha fazla da oynayabileceğimi düşünüyorum. Burada anlatmak istemeyeceğim, konuşmak istemeyeceğim sebeplerden dolayı forma şansı bulamadım. Şimdi buradayım. Yakın gelecekte hedefim Hull City'de başarılı olmak. Özellikle bu sezonu olabildiğince iyi yerde bitirmek\" dedi.\n\n\"JORGE JESUS'A FENERBAHÇE'DE İYİ ŞANSLAR DİLİYORUM\"\n\nFenerbahçe Teknik Direktörü Jorge Jesus ile çalışmış olsaydı, performansının farklı olup, olmayacağı ile ilgili gelen bir soru üzerine Allahyar, şöyle konuştu:\n\n\"Zorya'dan Fenerbahçe'ye döndüğüm zaman Jesus orada değildi. Dolayısıyla kendisiyle hiç çalışma şansım olmadı. Eğer onunla çalışsaydım nasıl olurdu bilmiyorum. Kendisine Fenerbahçe'de iyi şanslar diliyorum.\"\n\nKendisine uzun vadeli hedefler koymadığının altını çizen Allahyar Seyyadmenes, \"Ben genel olarak kariyerimi düşünürken, anı düşünen biriyim. 2 ya da 3 yıl sonrası için kafamda fazla hedefler koymam. Tabii ki bazı hedeflerim var. Ancak şu anda Hull City ekibine odaklandım\" dedi.",
+      "haberKayitTarihi": "1670320183448",
+      "haberDuzenlemeTarihi": "1670329392185",
+      "haberResim": "haber1.jpg"
+    },
+    {
+      "id": 2,
+      "haberYazan": "Ahmet Cankurt",
+      "haberBasligi": "Beşiktaş Teknik Direktörü Şenol Güneş'ten transfer açıklaması! Caner Erkin, Neymar, Ronaldo...",
+      "categoryId": "2",
+      "haberManseti": "Beşiktaş Teknik Direktörü Şenol Güneş, kamp öncesi düzenlediği basın toplantısında açıklamalarda bulunuyor. Güneş kendisine sorulan Caner Erkin sorusuna da net bir cevap verdi. İşte detaylar...",
+      "haberYazisi": "Şenol Güneş'in açıklamaları şöyle;\n\n'Oyuncuların iyi niyetli çalışmalarını görüyoruz. Birlikte çalışarak en iyisini yapmaya çalışıyoruz. Genel hava iyi. Birlikte hücum ve savunma yapmayı anlatmaya çalışıyoruz.'\n\n'DEVRE ARASI TRANSFER YAPABİLİRİZ'\n\n'Başkan ile oyuncu için bir şey konuşmadık. Hiçbir oyuncu şu an gitmiyor, hiçbir oyuncu da almıyoruz. Almamız da, göndermemiz de mümkün değil. Devre arasında oyuncu alabiliriz ama şu an mümkün değil.'\n\n'KİMSEYİ SUÇLAMAK İSTEMİYORUZ'\n\nKamuoyunda 'Benden önceki kötü, ben iyiyim' algısını doğru bulmuyorum. Hatalar var ve bunları düzeltmek istiyorum. Sürekli hata yapan oyuncu varsa, gidecek. Öncesi yok, başkasını suçlamak ve kendimizi aklamak istemiyoruz.\n",
+      "haberKayitTarihi": "1670321216525",
+      "haberDuzenlemeTarihi": "1670337419668",
+      "haberResim": "haber2.jpg"
+    },
+    {
+      "id": 3,
+      "haberYazan": "Ahmet Cankurt",
+      "haberBasligi": "Manchester United, Cristiano Ronaldo ile yollarını ayırdı!",
+      "categoryId": "3",
+      "haberManseti": "Manchester United, Cristiano Ronaldo ile karşılıklı anlaşarak yolların ayrıldığını açıkladı.",
+      "haberYazisi": "İngiltere Premier Lig ekibi Manchester United, Portekizli yıldız futbolcu Cristiano Ronaldo'nun sözleşmesinin feshedildiğini açıkladı.\n\nManchester United ile Ronaldo'nun yolları, 37 yaşındaki golcü oyuncunun, İngiliz televizyon kanalı TalkTV'de yayınlanan \"Piers Morgan Sansürsüz\" programındaki ses getiren röportajından bir hafta sonra ayrıldı.\n\nKulüpten yapılan açıklamada, Ronaldo'nun sözleşmesinin karşılıklı anlaşma sonucu feshedildiği belirtildi. Manchester United formasıyla 346 maçta 145 gol atan Ronaldo'ya, takıma katkısından dolayı teşekkür edildi.\n\nManchester United'dan yapılan açıklamada şu ifadelere yer verildi:\n\n\"Cristiano Ronaldo, karşılıklı anlaşma sonrası derhal Manchester United'dan ayrılmıştır.\n\nKulüp, Old Trafford'daki iki döneminde çıktığı 346 maçta 145 gol atarak yaptığı muazzam katkısından dolayı kendisine teşekkür ediyor, kendisine ve ailesine gelecekte başarılar diliyor.\n\nManchester United'daki herkes, Erik ten Hag yönetiminde takımın ilerlemesini sürdürmeye ve sahada başarı sağlamak için birlikte çalışmaya odaklanmak istiyor.\"",
+      "haberKayitTarihi": "1670321559952",
+      "haberDuzenlemeTarihi": "1670329242461",
+      "haberResim": "haber3.jpg"
+    },
+    {
+      "id": 4,
+      "haberYazan": "Ahmet Cankurt",
+      "haberBasligi": "FIFA'dan Uruguay'a disiplin soruşturması!",
+      "categoryId": "3",
+      "haberManseti": "FIFA, Gana maçında yaşananların ardından Uruguay Futbol Federasyonu, Fernando Muslera, Edinson Cavani, Jose Gimenez ve Diego Godin hakkında disiplin soruşturması başlattı.",
+      "haberYazisi": "FIFA, Dünya Kupası'na grup aşamasında veda eden Uruguay'a disiplin soruşturması açtı.\n\nFIFA Disiplin Komisyonu, Uruguay'ın Dünya Kupası'nda Gana ile oynadığı karşılaşmada yaşananların ardından Uruguay Futbol Federasyonu, Fernando Muslera, Edinson Cavani, Jose Gimenez ve Diego Godin hakkında disiplin soruşturması başlattı.\n\nUruguay'ın 2-0 kazandığı karşılaşmanın ardından Güney Amerika ekibinde futbolcular, karşılaşmanın hakemi Daniel Siebert'e yoğun şekilde itirazda bulunmuştu. Cavani ayrıca, VAR monitörünü yumruklamıştı.\n\nUruguay, Gana'yı 2-0 mağlup etmesine rağmen, Güney Kore'nin Portekiz'i mağlup etmesi sonrası averajla Kore'nin gerisinde kalmış ve Dünya Kupası'na veda etmişti.\n\n",
+      "haberKayitTarihi": "1670321753609",
+      "haberDuzenlemeTarihi": "1670321753609",
+      "haberResim": "haber4.jpg"
+    },
+    {
+      "id": 5,
+      "haberYazan": "Ahmet Cankurt",
+      "haberBasligi": "Brezilya Milli Takımı'na Neymar'dan iyi haber",
+      "categoryId": "3",
+      "haberManseti": "Katar'da düzenlenen 2022 FIFA Dünya Kupası'nda Brezilya, son 16 turunda Güney Kore ile karşılaşacakken, sakatlığı bulunan Neymar'ın tedavisinin tamamlandığı ve Güney Kore karşısında forma giyebileceği belirtildi",
+      "haberYazisi": "Katar’ın ev sahipliğinde düzenlenen 2022 FIFA Dünya Kupası’nda favoriler arasında yer alan Brezilya, son 16 turunda Güney Kore’yle oynayacak. \n\nBrezilya Teknik Direktörü Tite, Neymar'ın sakatlığının geçtiğini ve Güney Kore karşısında forma giyebileceğini açıkladı.\n\n30 yaşındaki futbolcu, Dünya Kupası'ndaki ilk maçında Sırbistan mücadelesinde sakatlanıp karşılaşmanın 80. dakikasında oyuna devam edememiş ve gruptaki diğer iki maçta da sakatlık yüzünde forma şansı bulamamıştı. \n\nSakatlığını atlatan yıldız futbolcu, şans verilmesi halinde bugün Güney Kore karşısında sahadaki yer alabilecek.\n\nBrezilya, Güney Kore ile son 16 turu mücadelesinde bugün saat 22.00'de karşı karşıya gelecek.",
+      "haberKayitTarihi": "1670321986036",
+      "haberDuzenlemeTarihi": "1670321986036",
+      "haberResim": "haber5.jpg"
+    },
+    {
+      "id": 6,
+      "haberYazan": "Ahmet Cankurt",
+      "haberBasligi": "Fenerbahçe'de iki sakatlıka",
+      "categoryId": "4",
+      "haberManseti": "Fenerbahçe, Enner Valencia ve Ezgjcan Alioski'nin sağlık durumuyla ilgili açıklama yayınladı.  Sarı-lacivertliler, milli takımda dizinden sakatlanan Enner Valencia'nın 2 haftalık tedavi sürecinden sonra takıma katılacağını açıkladı.",
+      "haberYazisi": "İşte kulüpten yapılan açıklama;\n\n\"Profesyonel Futbol A Takım oyuncularımızdan Enner Valencia, milli takımında yaşadığı diz sakatlığı nedeniyle 2 haftalık tedavi sürecinin ardından takımla çalışmalara başlayacaktır.\n\n2. derece zorlanma tespit edildi\nAntrenmanda yaşadığı kasık ağrısı nedeniyle Altunizade Hastanesi'nde çekilen MR'ında 2. derece zorlanma tespit edilen Ezgjan Alioski ise 2-3 haftalık tedavi sürecinin ardından antrenmanlara başlayacaktır.\"\n\n",
+      "haberKayitTarihi": "1670323077032",
+      "haberDuzenlemeTarihi": "1670328702417",
+      "haberResim": "haber6.jpg"
+    },
+    {
+      "id": 7,
+      "haberYazan": "Ahmet Cankurt",
+      "haberBasligi": "KDV indirimleri marketlere yansıyacak mı? Ticaret Bakanı Muş'tan talimat!",
+      "categoryId": "1",
+      "haberManseti": "Gıdadaki KDV'nin yüzde 8'den 1'e indirilmesi sonrası gözler marketlerde. Bakan Mehmet Muş'tan son dakika açıklaması geldi: 81 ilimizdeki Ticaret Müdürlüklerimize talimatımızı verdik. Pazartesi günü itibariyle denetimlerimizi daha da yoğunlaştıracağız.  OKU, YORUMLA ve PAYLAŞ ==> https://www.habermanset.com.tr/gundem/kdv-indirimleri-marketlere-yansiyacak-mi-ticaret-bakani-mus-tan-h546955.html  Haber Manşet Gazetesi",
+      "haberYazisi": "Ticaret Bakanı Mehmet Muş, gıda ürünlerinde katma değer vergisinin (KDV) yüzde 8'den yüzde 1'e indirilmesine ilişkin düzenlemenin amacına ulaşması için gerekli tedbirleri ivedilikle aldıklarını belirterek, \"81 ilimizdeki ticaret müdürlüklerimize talimatımızı verdik, pazartesi günü itibarıyla denetimlerimizi daha da yoğunlaştıracağız.\" ifadesini kullandı. Muş, Twitter hesabından yaptığı paylaşımda, gıda ürünlerinde KDV indirimlerine ilişkin denetimlerin yapılacağını bildirdi: 1) Gıda ürünlerinde KDV’nin %8’den %1'e indirilmesi düzenlemesinin amacına ulaşması için gerekli tedbirleri ivedilikle alıyoruz. 81 ilimizdeki Ticaret Müdürlüklerimize talimatımızı verdik. Pazartesi günü itibariyle denetimlerimizi daha da yoğunlaştıracağız. 2) Yapacağımız denetimler neticesinde KDV indirimini fiyatlara yansıtmayan ve haksız fiyat artışlarıyla vatandaşlarımızı mağdur eden marketlere en ağır yaptırımları uygulayacağımızdan kamuoyunun hiçbir şüphesi olmasın. Hangi ürünlerin fiyatı inecek? Karar Resmi Gazete'de bugün yayımlandı. Söz konusu düzenlemeyle Özel Tüketim Vergisi'ne tabi tutulan meyve suları, kola, havyar gibi ürünler hariç olmak üzere KDV indirimleri; Pirinç, bulgur, nohut gibi tüm bakliyat ürünleri, su, çay, şeker, tuz, sıvı ve katı yağlar, kırmızı et, beyaz et, balık, süt, yoğurt, peynir, zeytin ve bunlardan yapılan ürünlerin fiyatlarında geçerli olacak. Ayrıca, yumurta, patates, soğan, biber, domates, salatalık gibi sebze ürünleri, meyveler, konserveler, turşu, salça, reçel, bal, pekmez, tahin helvası, fındık ezmesi, çikolata, lokum, bisküvi, kraker, gofret, pasta, kek, baklava, yufka, makarna, şehriye, tahıl gevreği, fındık, ceviz, Antep fıstığı, badem gibi kuruyemiş ürünleri, baharatlar, bebek mamaları da KDV oranı yüzde 1'e düşürülen ürünler arasında yer alıyor.\n\nOKU, YORUMLA ve PAYLAŞ ==> https://www.habermanset.com.tr/gundem/kdv-indirimleri-marketlere-yansiyacak-mi-ticaret-bakani-mus-tan-h546955.html\n\nHaber Manşet Gazetesi",
+      "haberKayitTarihi": "1670327835959",
+      "haberDuzenlemeTarihi": "1670327835959",
+      "haberResim": "haber7.jpg"
+    }
+  ]
+}

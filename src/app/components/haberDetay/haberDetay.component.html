@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row"  >
+    <div class="col-lg-10 boxShadow "  style="background-color: white;  margin-bottom: 15px;margin: auto; padding: 20px; margin-top: 100px; " data-aos="fade-down-right" data-aos-duration="1500">
+      <h1 style="  
+        margin-top: 150px;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 130%;
+        display: inline;
+        padding: 10px;
+        border-radius: 20px;
+        color: black;
+        "> <h5>Haber Yazan : {{secHaber.haberYazan}} <br></h5> {{secHaber.haberBasligi}}</h1>
+    </div>
+      <div class="col-lg-10 resim boxShadow " style="background-image: url(../../../assets/{{secHaber.haberResim}}); margin-bottom: 15px;  margin: auto; " data-aos="fade-up-left" data-aos-duration="1500">
+      </div>
+      <div class="col-lg-10 boxShadow " style="background-color: white;  margin-bottom: 15px;margin: auto; padding: 20px; ">
+        <p style="margin-top: 20px; font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif, Geneva, Tahoma, sans-serif;">{{secHaber.haberYazisi}}</p>
+      </div>
+      <h1 style="text-align: center; color: azure; background-color: gray; padding: 10px; display: inline; " class="my-4" data-aos="fade-right" data-aos-duration="2000" >Tüm Haberler</h1>
+      
+      <div class="col-lg-12 boxShadow " style="background-color: white;  margin: auto;  height:500px ; overflow: auto; margin-bottom: 20px; padding: 0!important;"  data-aos="fade-left" data-aos-duration="2000">
+        <div class="w3-container" >    
+          <ul class="w3-ul w3-card-4" >
+            <li class="w3-bar" *ngFor="let haber of haberler">    
+              <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+              <img src="../../../assets/{{haber.haberResim}}" class="w3-bar-item  w3-hide-small" style="width:200px ;border-radius: 50px;">
+              <div class="w3-bar-item">
+                <span class="w3-large"><b>{{haber.haberBasligi}}</b></span><br>
+                <span>Haber Yazan : {{haber.haberYazan}}</span>
+               <a href="#top">
+                  <button type="button" class="btn  btn-outline-secondary" style="padding: 10px; margin: 10px;" [routerLink]="['/haberdetay',haber.id]">Detay</button>
+                  <button type="button" class="btn  btn-outline-secondary" style="padding: 10px;" [hidden]="servis.aktifUye.admin!=1" [routerLink]="['/news']">Edit</button>
+              </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
+

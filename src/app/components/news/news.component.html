@@ -1,0 +1,98 @@
+<div class="container mt-5" >
+    <div class="row">
+      <div class="col-12"  style="margin-top: 100px;">
+        <h3 >Haberler</h3>
+        <button class="btn btn-outline-primary" (click)="Ekle(modalEkleDuzenle)"
+          [disabled]="servis.aktifUye.admin==0">Haber Ekle</button>
+        <div class="table-responsive-sm">
+          <table class="table table-gray table-bordered mt-3">
+            <thead class="bg-danger text-white table-dark">
+              <th class="p-2">Id</th>
+              <th class="p-2">Yazan </th>
+              <th class="p-2">Basligi</th>   
+              <th class="p-2">Manseti </th>
+              <th class="p-2" style="width: 150px;">Kayit Tarihi:</th>
+              <th class="p-2" style="width: 150px;">Duzenleme Tarihi</th>
+              <th class="p-2">Düzenle</th>
+              <th class="p-2">Sil</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let haber of haberler">
+                <td>{{haber.id}}</td>
+                <td>{{haber.haberYazan}}</td>
+                <td>{{haber.haberBasligi}}</td>
+                <td>{{haber.haberManseti}}</td>
+                <td>{{haber.haberKayitTarihi | date:'dd.MM.yyyy HH:mm:ss'}}</td>
+                <td>{{haber.haberDuzenlemeTarihi | date:'dd.MM.yyyy HH:mm:ss'}}</td>         
+                <td><button class=" btn btn-outline-warning" (click)="Duzenle(haber,modalEkleDuzenle)"
+                    [disabled]="servis.aktifUye.admin==0">Düzenle</button></td>
+                <td><button class="btn btn-outline-danger" (click)="Sil(haber,modalSil)"
+                    [disabled]="servis.aktifUye.admin==0">Sil</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12">
+  <div  class="modal" tabindex="-1" #modalEkleDuzenle>
+    <div class="modal-dialog">
+      <form  [formGroup]="frm"  (ngSubmit)="NewsEkleDuzenle()">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">{{modalBaslik}}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Haber Başlığı</label>
+              <input type="text" class="form-control" formControlName="haberBasligi">
+              <label>Haber Manseti</label>
+              <input type="text" class="form-control" formControlName="haberManseti">
+              <label>Haber Kategori</label>
+              <select class="form-control" formControlName="categoryId">
+                <option [value]="kat.id" *ngFor="let kat of kategoriler">{{kat.kategoriAdi}}</option>
+              </select>
+              <label for="floatingTextarea">Haber Yazisi</label>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" formControlName="haberYazisi"></textarea>
+                <label for="floatingTextarea">Haber Yazisi</label>
+              </div>
+              <label>Haber Resim Yolu Olarak Kaydet</label>
+              <input type="text" class="form-control" formControlName="haberResim">
+
+              <input type="hidden" class="form-control" formControlName="id">
+              <input type="hidden" class="form-control" formControlName="haberYazan">
+              <input type="hidden" class="form-control" formControlName="haberKayitTarihi">
+              <input type="hidden" class="form-control" formControlName="haberDuzenlemeTarihi">
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+            <input type="submit" class="btn btn-outline-primary" value="Kaydet">
+            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Kapat</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <div class="modal" tabindex="-1" #modalSil>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title">{{modalBaslik}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6 *ngIf="secKat">{{secKat.haberBasligi}} adlı Kategori Silinecektir Onaylıyor musunuz?</h6>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-danger" *ngIf="secKat" (click)="NewsSil()">Sil</button>
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    

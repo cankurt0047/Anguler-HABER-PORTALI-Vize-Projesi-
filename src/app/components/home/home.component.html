@@ -1,0 +1,190 @@
+<div class="container-fluid">
+  <div class="row">
+   
+
+
+    <div class="col-md-8  boxShadow navbar__coursel__Css " style="margin: auto; margin-bottom: 80px; margin-top: 150px; border-radius: 20px; " >
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"  >
+        <div class="carousel-inner " style="border-radius:20px ;" >
+          
+          <div class="carousel-item  boxShadow" data-bs-interval="2000"  *ngFor="let haber of haberler" >
+            <img src="../../../assets/{{haber.haberResim}}"   class="d-block w-100" alt="..." style="height: 500px; ">
+            <div class="carousel-caption  d-md-block">
+              <div  style="background-color: white; border-radius: 10px; padding: 10px ;">           
+                  <h3 class=" fw-bold ">{{haber.haberBasligi}}  </h3>
+                  <button class="btn btn-warning  btn-lg p-2"   [routerLink]="['/haberdetay',haber.id]" >Haber Detay</button>      
+              </div>
+            </div>
+          </div>     
+          <div class="carousel-item active boxShadow" data-bs-interval="2000" >
+            <img src="../../../assets/anaSayfa.jpg"   class="d-block w-100" alt="..." style="height: 500px;">
+            <div class="carousel-caption  d-md-block">
+
+            </div>
+          </div>          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12">
+  <h1 style="text-align: center;" class="my-4">Haber Kategorileri</h1>
+  <div  class="d-flex justify-content-center mb-5" >
+     <button type="button" style=" margin-left: 20px; " class="btn btn-lg  btn-warning p-2" (click)="KatSec(kat.id)"   [value]="kat.id"  *ngFor="let kat of kategoriler"  >{{kat.kategoriAdi}}</button>
+  </div>
+
+</div>
+
+<div class="row"> 
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <h1 style="text-align: center;" class="my-4" *ngIf="katId!=0">{{secKat.kategoriAdi}}</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 " >
+        <div class="col" *ngFor="let haber of seciliHaber">
+          <div class="card shadow-sm p-2 m-2"   style="height: 450px;"   >
+            <img src="../../../assets/{{haber.haberResim}}"   class="d-block w-100" alt="..." style="height: 250px;" >
+            
+            <div class="card-body">
+              <h5  class="card-text p-4">{{haber.haberBasligi}}</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn  btn-outline-secondary" style="padding: 10px; margin: 10px;" [routerLink]="['/haberdetay',haber.id]">Detay</button>
+                  <button type="button" class="btn  btn-outline-secondary" style="padding: 10px;" [hidden]="servis.aktifUye.admin!=1" (click)="Duzenle(haber,modalEkleDuzenle)">Edit</button>
+                </div>
+                <small  class="text-muted">Tarih &nbsp;&nbsp; :&nbsp;&nbsp;  {{haber.haberKayitTarihi | date:'dd.MM.yyyy HH:mm:ss'}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-10" style="margin: auto;">
+  <div >
+  <h1 style="text-align: center; color: azure; background-color: gray; padding: 15px; border-radius: 30px;" class="my-4" data-aos="fade-right" data-aos-duration="2000" >Tüm Haberler</h1>
+  </div>
+  <div class="col-lg-12 boxShadow " style="background-color: white;  margin: auto;  height:500px ; overflow: auto; margin-bottom: 20px; padding: 0!important; margin-top: 50px; "  data-aos="fade-left" data-aos-duration="2000">
+    <div class="w3-container" >    
+      <ul class="w3-ul w3-card-4" >
+        <li class="w3-bar" *ngFor="let haber of haberler">    
+          <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+          <img src="../../../assets/{{haber.haberResim}}" class="w3-bar-item  w3-hide-small" style="width:200px ;border-radius: 50px;">
+          <div class="w3-bar-item">
+            <span class="w3-large"><b>{{haber.haberBasligi}}</b></span><br>
+            <span> Tarih : {{haber.haberKayitTarihi | date:'dd.MM.yyyy HH:mm:ss' }}</span>   
+            <button type="button" class="btn  btn-outline-secondary" style="padding: 10px; margin: 10px;" [routerLink]="['/haberdetay',haber.id]">Detay</button>
+            <button type="button" class="btn  btn-outline-secondary" style="padding: 10px;" [hidden]="servis.aktifUye.admin!=1" [routerLink]="['/news']">Edit</button>
+          
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="conteiner">
+  <div class="row">
+
+    <div class="col-md-12" >
+      <div  class="modal" tabindex="-1" #modalEkleDuzenle>
+        <div class="modal-dialog">
+          
+            <form  [formGroup]="frm"  (ngSubmit)="NewsEkleDuzenle()">
+              <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                  <h5 style="padding: 20px;" class="modal-title">{{modalBaslik}}</h5>
+                  <button style="padding: 20px;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 20px;"> 
+                  <div class="form-group">
+                    <label>Haber Başlığı</label>
+                    <input type="text" class="form-control" formControlName="haberBasligi">
+                    <label>Haber Manseti</label>
+                    <input type="text" class="form-control" formControlName="haberManseti">
+                    <label>Haber Kategori</label>
+                    <select class="form-control" formControlName="categoryId">
+                      <option [value]="kat.id" *ngFor="let kat of kategoriler">{{kat.kategoriAdi}}</option>
+                    </select>
+                    <label for="floatingTextarea">Haber Yazisi</label>
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" formControlName="haberYazisi"></textarea>
+                      <label for="floatingTextarea">Haber Yazisi</label>
+                    </div>
+                    <label>Haber Resim Yolu Olarak Kaydet</label>
+                    <input type="text" class="form-control" formControlName="haberResim">
+    
+                    <input type="hidden" class="form-control" formControlName="id">
+                    <input type="hidden" class="form-control" formControlName="haberYazan">
+                    <input type="hidden" class="form-control" formControlName="haberKayitTarihi">
+                    <input type="hidden" class="form-control" formControlName="haberDuzenlemeTarihi">
+                    
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <input style="padding: 20px;" type="submit" class="btn btn-outline-primary" value="Kaydet">
+                  <button style="padding: 20px;" type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Kapat</button>
+                </div>
+              </div>
+            </form>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 
+<div class="col-12">
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <h4>1</h4>
+    </div>
+    <div class="item">
+      <h4>2</h4>
+    </div>
+    <div class="item">
+      <h4>3</h4>
+    </div>
+    <div class="item">
+      <h4>4</h4>
+    </div>
+    <div class="item">
+      <h4>5</h4>
+    </div>
+    <div class="item">
+      <h4>6</h4>
+    </div>
+    <div class="item">
+      <h4>7</h4>
+    </div>
+    <div class="item">
+      <h4>8</h4>
+    </div>
+    <div class="item">
+      <h4>9</h4>
+    </div>
+    <div class="item">
+      <h4>10</h4>
+    </div>
+    <div class="item">
+      <h4>11</h4>
+    </div>
+    <div class="item">
+      <h4>12</h4>
+    </div>
+  </div>
+
+</div> -->

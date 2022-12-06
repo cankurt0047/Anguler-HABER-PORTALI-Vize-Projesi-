@@ -1,0 +1,25 @@
+<div class="container mt-5 ">
+  <div class="row">
+    <div class="" style="display: flex ; justify-content: center; text-align: center; height: 700px;">
+        <main class="form-signin ">
+          <form>
+                   <h1 class="h3 mb-3 fw-normal">Üye Giriş Ekranı</h1>
+
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" #mail placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" #parola placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="OturumAc(mail.value,parola.value)">Sign in</button>
+            
+          </form>
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+
